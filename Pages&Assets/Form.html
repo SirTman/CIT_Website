@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Purchese</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/demo.css"> 
+ </head>
+
+
+
+
+<body>
+  <div class="container-fluid">
+    <div class="creditCardForm">
+      <div class="heading">
+        <h1>Payment Methord</h1>
+      </div>
+      <div class="payment">
+        <form>
+          <p> </p>
+          <div class="form-group owner"> <label for="Names">First name</label>
+            <br>
+            <input type="text" class="form-control" id="FirstName" name="FirstName">
+            <br> <label for="owner">Last name</label>
+            <br>
+            <input type="text" class="form-control" id="LastName" name="LastName">
+            <br>
+            <br> </div>
+          <p> </p>
+          <div class="form-group owner"> <label for="Adress">Postal address</label><br>
+            <input type="text" class="form-control" id="PostAdrs" name="PostAdrs">
+			
+            <br> <label for="owner">City or suburb</label><br>
+				<input type="text" class="form-control" id="City" name="City">
+			
+            <br> <label for="owner">State/Territory of residence</label>
+				<br> <select>
+									<option value="0"> ---</option>
+									<option value="1"> ACT</option>
+									<option value="2"> NSW</option>
+									<option value="2"> NT</option>
+									<option value="3"> QL</option>
+									<option value="4"> SA</option>
+									<option value="5"> Tas</option>
+									<option value="6"> Vic</option>
+									<option value="6"> WA</option>
+								</select>
+				<br> </div>
+          
+		  <div class="form-group CVV"> <label for="PostCode">Post code</label><br>
+            <input type="text" class="form-control" id="PostCode" name="PostCode"> </div>
+          <br>
+          <p> </p>
+          <p> </p>
+          <div class="form-group owner"> <label for="owner">Credit Card Owner</label><br>
+            <input type="text" class="form-control" id="owner" name="owner"> </div>
+			
+          <div class="form-group CVV"> <label for="cvv">CVV</label>
+            <input type="text" class="form-control" id="cvv" name="cvv"> </div>
+			
+          <div class="form-group" id="card-number-field"> 
+		  <label for="cardNumber">Credit Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" name="cardNumber"> </div>
+			
+          <div class="form-group" id="expiration-date" name="expiration-date"> <label>Expiry Date</label> <select>
+								<option value="01">---</option>
+								<option value="01">January</option>
+								<option value="02">February </option>
+								<option value="03">March</option>
+								<option value="04">April</option>
+								<option value="05">May</option>
+								<option value="06">June</option>
+								<option value="07">July</option>
+								<option value="08">August</option>
+								<option value="09">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+							</select> <select>
+								<option value="15"> ----</option>
+								<option value="16"> 2016</option>
+								<option value="17"> 2017</option>
+								<option value="18"> 2018</option>
+								<option value="19"> 2019</option>
+								<option value="20"> 2020</option>
+								<option value="21"> 2021</option>
+							</select> </div>
+          <div class="form-group" id="credit_cards">
+            <img src="assets/images/visa.jpg" id="visa">
+            <img src="assets/images/mastercard.jpg" id="mastercard">
+            <img src="assets/images/amex.jpg" id="amex"> </div>
+          
+		  <div class="form-group" id="pay-now">
+            <button type="submit" class="btn btn-default" id="confirm-purchase" onclick="WriteToFile(passForm)">BUY~</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type ="text/javascript"> 
+	
+  </script>
+</body>
+
+</html>
